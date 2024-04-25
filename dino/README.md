@@ -1,5 +1,5 @@
 # Test-time adaptation by RGB-based mask propagation
-Flow-predicted masks from OCLR models can be further refined by introducing RGB information. Here, we follow the similar idea proposed in [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294), and utilise DINO features to propagate **good** flow-predicted masks with additional processes such as dynamic refinements and finetuning DINO features.
+We have adopted the dino post-processing method from OCLR, which allows for further refinement of flow-predicted masks by incorporating RGB information into the model predictions. Here, we follow the similar idea proposed in [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294), and utilise DINO features to propagate **good** flow-predicted masks with additional processes such as dynamic refinements and finetuning DINO features.
 
 The code is copied and modified from the pytorch implementation of [Self-Supervised Vision Transformers with DINO](https://github.com/facebookresearch/dino).<br/>
 
